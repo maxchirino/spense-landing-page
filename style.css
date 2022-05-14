@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --font: "Cabin", sans-serif;
+  --clr-accent: hsl(0, 0%, 0%);
+  --clr-primary: hsl(36, 14%, 93%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-accent);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Utility */
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.btn-secondary {
+  font-weight: 600;
+  color: hsl(0, 0%, 30%);
+  text-decoration: underline;
+}
+
+.btn-primary:hover,
+.main-nav__list a:hover,
+.btn-secondary:hover,
+.main-footer__links a:hover {
+  opacity: 0.7;
+}
+.checkmark {
+  display: inline-block;
+  height: 1.1rem;
+}
+
+.main-paragraph {
+  margin-bottom: 1.2rem;
+  color: hsl(0, 0%, 40%);
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.main-nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  font-weight: 600;
+}
+
+.main-nav__hamburger {
+  display: none;
+}
+
+/* Header */
+.main-header__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.main-header__info {
+  width: 60%;
+}
+
+.main-header__info ul {
+  margin-bottom: 1.2rem;
+}
+.main-header__info ul li {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.main-header__action {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-header__action input[type="email"] {
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid hsl(0, 0%, 70%);
+}
+
+.main-header__action input[type="email"]::placeholder {
+  color: hsl(0, 0%, 70%);
+}
+
+.main-header__hero {
+  width: 40%;
+}
+
+.hero-tablet,
+.hero-mobile {
+  display: none;
+}
+
+/* Customers */
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+
+/* Escrow */
+.escrow {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.escrow__info {
+  width: 50%;
+  margin: auto 0;
+  padding: 2rem 0 2rem 5rem;
+}
+
+.escrow__hero {
+  width: 50%;
+}
+
+/* Text Editor */
+.text-editor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 2.5rem;
+}
+
+.text-editor__hero {
+  width: 60%;
+}
+
+.text-editor__info {
+  width: 40%;
+  padding: 2rem 1rem 2rem 0;
+}
+
+/* Footer */
+.main-footer {
+  background-color: var(--clr-accent);
+}
+
+.main-footer__content,
+.main-footer__content a {
+  color: var(--clr-white);
+}
+
+.main-footer__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 4rem 0;
+}
+
+.main-footer__info .main-paragraph,
+.main-footer__links ul li a {
+  color: hsl(0, 0%, 60%);
+}
+
+.main-footer__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 1.1rem;
+}
+
+.main-footer__links p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-footer__links p,
+.main-footer__links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.main-footer__links .links-1,
+.main-footer__links .links-2 {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.1rem;
+  }
+  .hero-desktop {
+    display: none;
+  }
+  .hero-tablet {
+    display: block;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  /* Header */
+  .main-header__content {
+    flex-direction: column-reverse;
+  }
+  .main-header__info,
+  .main-header__hero {
+    width: 100%;
+  }
+
+  .main-header__info {
+    padding-right: 2rem;
+  }
+
+  /* Customers */
+  .customers div:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  /* Escrow */
+  .escrow {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .escrow__info,
+  .escrow__hero {
+    width: 100%;
+  }
+
+  .escrow__info {
+    padding: 4rem 5rem 0 5rem;
+  }
+
+  .escrow__info h2 {
+    width: 80%;
+  }
+
+  /* Text Editor */
+  .text-editor {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    gap: 0;
+  }
+
+  .text-editor__hero,
+  .text-editor__info {
+    width: 100%;
+  }
+
+  .text-editor__info {
+    padding: 2rem 0;
+  }
+
+  /* Footer */
+  .main-footer__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .main-footer__links {
+    justify-content: space-evenly;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-tablet {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+  /* Navigation */
+  .main-nav__list {
+    display: none;
+  }
+  .main-nav__hamburger {
+    display: block;
+  }
+
+  /* Header */
+  .main-header__content {
+    gap: 2.1rem;
+  }
+
+  .main-header__info {
+    padding-right: 0;
+  }
+  .main-header__action input[type="email"] {
+    width: 50%;
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* Escrow */
+  .escrow__info {
+    padding: 2.3rem 2.3rem 0 2.3rem;
+  }
+
+  /* Customers */
+  .customers {
+    gap: 0.9rem;
+  }
+  .customers div:nth-last-child(-n + 5) {
+    display: none;
+  }
+
+  /* Footer */
+  .main-footer__content {
+    gap: 2rem;
+  }
+  .main-footer__links {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .links {
+    width: 8rem;
+  }
+
+  .main-footer__links .links-1,
+  .main-footer__links .links-2 {
+    justify-content: space-between;
+  }
+}
